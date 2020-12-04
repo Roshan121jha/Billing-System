@@ -1,0 +1,51 @@
+JFDML JFormDesigner: "7.0.2.6.321" Java: "11.0.8" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundleName": "application"
+	"i18n.keyPrefix": "splash_new"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq {space :p:22:p, comp label1:::p::p}, seq l {space :p:143:p, comp label2:::p::p, space s:::p, comp InvSys:::p::p}, seq l {space :p:253:p, comp label3:::p::p}}, space ::40:x}, comp progressBar1::l::513:x}"
+			"$verticalGroup": "par l {seq {par l {seq l {space :p:15:p, comp label1:::p::p, par l {seq {space :p:29:p, comp label2:::p::p}, seq l {space :p:60:p, comp InvSys:::p::p}}, space ::82:x}, seq {space ::197:x, comp label3:::p::p, space :p:29:p}}, comp progressBar1:::p::p}}"
+		} ) {
+			name: "this"
+			"undecorated": true
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": new FormMessage( null, "splash_new.label1.text" )
+				"font": new java.awt.Font( "Century Gothic", 1, 30 )
+				"foreground": new java.awt.Color( 255, 0, 51, 255 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/static/images/database-import.png" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "InvSys"
+				"text": "Invsys"
+				"font": new java.awt.Font( "Century Gothic", 1, 30 )
+				"foreground": new java.awt.Color( 255, 0, 51, 255 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "%"
+				"foreground": new java.awt.Color( 251, 0, 51, 255 )
+				"font": new java.awt.Font( "Century Gothic", 1, 30 )
+			} )
+			add( new FormComponent( "javax.swing.JProgressBar" ) {
+				name: "progressBar1"
+				"font": new com.jformdesigner.model.SwingFont( "Button.font" )
+				"foreground": new java.awt.Color( 255, 0, 51, 255 )
+				"background": new java.awt.Color( 255, 0, 51, 255 )
+				"borderPainted": false
+				"minimumSize": new java.awt.Dimension( 4, 2 )
+				"maximumSize": new java.awt.Dimension( 10, 2 )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 235, 55 )
+			"size": new java.awt.Dimension( 515, 300 )
+		} )
+	}
+}

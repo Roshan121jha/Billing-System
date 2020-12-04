@@ -1,0 +1,75 @@
+JFDML JFormDesigner: "7.0.2.6.321" Java: "11.0.8" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundleName": "application"
+	"i18n.keyPrefix": "Login"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {comp panel1:::p::p, space :0:0:x}, seq l {space :p:69:p, par l {comp label3::l:p::p, comp label4::l:p::p}, space :::x, par l {comp textField1:::p:163:p, comp textField2:::p:163:p}, space :p:14:p}, seq t {space :::p, comp error:::p::p, space :::x, comp button1:::p::p, space :p:157:p}}"
+			"$verticalGroup": "par l {seq l {comp panel1:::p::p, space s:::p, par t {seq {par b {comp label3::b:p::p, comp textField1::b:p::p}, space :p:30:p, par l {comp label4:::p::p, comp textField2:::p::p}, space :p:29:p, comp button1:::p::p}, comp error:::p::p}, space ::38:x}}"
+		} ) {
+			name: "this"
+			"undecorated": true
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq t {space :p:22:p, comp label1::::350:x, space :::p, comp label2:::p::p, space :::p}}"
+				"$verticalGroup": "par l {seq {par l {seq {space :::p, comp label2:::p::p}, seq l {space :p:23:p, comp label1:::p::p}}, space ::31:x}}"
+			} ) {
+				name: "panel1"
+				"background": new java.awt.Color( 255, 0, 51, 255 )
+				"foreground": new java.awt.Color( 255, 0, 51, 255 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "InvSys"
+					"background": new java.awt.Color( 0, 0, 51, 255 )
+					"font": new java.awt.Font( "Century Gothic", 1, 30 )
+					"foreground": new java.awt.Color( 255, 255, 255, 255 )
+					"horizontalTextPosition": 0
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "X"
+					"font": new java.awt.Font( "Century Gothic", 1, 20 )
+					"foreground": sfield java.awt.Color white
+					"alignmentX": 0.2f
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "closeWindowMouseClicked", true ) )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Email"
+				"font": &Font0 new java.awt.Font( "Century Gothic", 1, 24 )
+				"foreground": &Color0 new java.awt.Color( 255, 0, 51, 255 )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "Password"
+				"font": #Font0
+				"foreground": #Color0
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField2"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "Login"
+				"background": new java.awt.Color( 255, 0, 51, 255 )
+				"font": new java.awt.Font( "Century Gothic", 1, 18 )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "LoginActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "error"
+				"foreground": sfield java.awt.Color red
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 210, 35 )
+			"size": new java.awt.Dimension( 400, 335 )
+		} )
+	}
+}
